@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph Shaju | Full-Stack Developer</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="https://img.icons8.com/ios11/512w/portfolio.png" type="image/x-icon">
+
+  <!-- tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+
+
 </head>
+
 <body>
-    <h1>hello </h1>
+
+  <!-- navbar -->
+
+
+  <nav class="bg-zinc-950 border-b border-gray-700">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 1) Hidden checkbox (the "peer") -->
+      <input id="menu-toggle" type="checkbox" class="hidden peer" />
+
+      <!-- 2) Header row -->
+      <div class="flex justify-between items-center h-16">
+
+        <h1 class="text-xl font-bold text-white">
+          < JOSEPH SHAJU >
+        </h1>
+
+        <!-- Desktop menu -->
+        <div class="hidden sm:flex space-x-6 text-white">
+          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-800">HOME</a>
+          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-800">ABOUT</a>
+          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-800">SKILLS</a>
+          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-800">PROJECTS</a>
+          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-800">EDUCATION</a>
+        </div>
+      </div>
+
+      <!-- 3) Mobile toggle buttons (siblings of the input) -->
+      <!-- Hamburger (shown when unchecked) -->
+      <label for="menu-toggle"
+        class="sm:hidden absolute right-4 top-5 inline-flex items-center justify-center cursor-pointer peer-checked:hidden text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </label>
+
+      <!-- Close (shown when checked) -->
+      <label for="menu-toggle"
+        class="sm:hidden absolute right-4 top-5 hidden peer-checked:inline-flex items-center justify-center cursor-pointer text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </label>
+
+      <!-- 4) Mobile menu (sibling of the input) -->
+      <div
+        class="sm:hidden hidden peer-checked:block px-2 pt-2 pb-3 space-y-1 bg-zinc-950 border-t border-gray-700 text-white">
+        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800">HOME</a>
+        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800">ABOUT</a>
+        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800">SKILLS</a>
+        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800">PROJECTS</a>
+        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800">EDUCATION</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
 </body>
+
 </html>
