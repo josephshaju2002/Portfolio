@@ -6,12 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joseph Shaju | Full-Stack Developer</title>
 
+  <link rel="stylesheet" href="style.css">
+
   <!-- favicon -->
-  <link rel="shortcut icon" href="https://img.icons8.com/ios11/512w/portfolio.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./media/icons8-portfolio-96.png" type="image/x-icon">
 
   <!-- tailwind cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+  <!-- fontawesome cdn -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -22,7 +30,7 @@
   <!-- navbar -->
 
 
-  <nav class="bg-zinc-950 border-b border-gray-700">
+  <nav class="bg-zinc-950 border-b border-zinc-950">
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <!-- 1) Hidden checkbox (the "peer") -->
@@ -32,12 +40,12 @@
       <div class="flex justify-between items-center h-16">
 
         <h1 class="text-xl font-bold text-white">
-          < JOSEPH SHAJU >
+          < JOSEPH SHAJU>
         </h1>
 
         <!-- Desktop menu -->
         <div class="hidden sm:flex space-x-6 text-white">
-          <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-800">HOME</a>
+          <a href="#home" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-800">HOME</a>
           <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-800">ABOUT</a>
           <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-800">SKILLS</a>
           <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-800">PROJECTS</a>
@@ -67,7 +75,7 @@
       <!-- 4) Mobile menu (sibling of the input) -->
       <div
         class="sm:hidden hidden peer-checked:block px-2 pt-2 pb-3 space-y-1 bg-zinc-950 border-t border-gray-700 text-white">
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800">HOME</a>
+        <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800">HOME</a>
         <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800">ABOUT</a>
         <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800">SKILLS</a>
         <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800">PROJECTS</a>
@@ -76,6 +84,58 @@
     </div>
   </nav>
 
+  <!-- home -->
+
+  <div id="home" class="h-[93vh] w-full bg-gradient-to-r from-neutral-950 from-50% to-zinc-500">
+    <div class="grid md:grid-cols-2 pt-[200px] pl-20">
+      <div>
+        <h1 class="text-white text-4xl py-3">Hey there,</h1>
+        <h1 class="text-orange-500 text-5xl py-3"><b><i>JOSEPH SHAJU</i></b></h1>
+        <h1 class="text-white text-4xl py-3">I'm a Jr MERN Stack Developer</h1> <a href="./media/Joseph Shaju.pdf">
+          <button
+            class="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-orange-500 mt-10 rounded-full">
+            <span
+              class="font-bold text-black text-xl relative z-10 group-hover:text-orange-500 duration-500">RESUME</span>
+            <span
+              class="absolute top-0 left-0 w-full bg-orange-500 duration-500 group-hover:-translate-x-full h-full"></span>
+            <span
+              class="absolute top-0 left-0 w-full bg-orange-500 duration-500 group-hover:translate-x-full h-full"></span>
+            <span
+              class="absolute top-0 left-0 w-full bg-orange-500 duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
+            <span
+              class="absolute delay-300 top-0 left-0 w-full bg-orange-500 duration-500 group-hover:translate-y-full h-full"></span>
+          </button> </a> <a href="#projects"> <button
+            class="cursor-pointer font-semibold overflow-hidden relative z-100 border border-orange-500 group px-8 py-2 ml-20">
+            <span class="relative z-10 text-orange-500 group-hover:text-black text-xl duration-500">MY WORKS</span>
+            <span
+              class="absolute w-full h-full bg-orange-500 -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
+            <span
+              class="absolute w-full h-full bg-orange-500 -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
+          </button> </a>
+      </div>
+
+      <div class="ml-40 relative md:w-auto md:h-auto">
+  <!-- Image hidden on small screens -->
+  <img class="hidden md:block" width="400px" height="300px" src="./media/Adobe Express - file.png" alt="">
+
+  <!-- Icons -->
+  <div class="absolute md:top-[250px] left-40 top-0 md:left-[420px]  flex flex-col text-4xl">
+    <a href="https://www.linkedin.com/in/joseph-shaju-/" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-linkedin my-4 hover:text-orange-500"></i>
+    </a>
+    <a href="https://github.com/josephshaju2002" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-github my-4 hover:text-orange-500"></i>
+    </a>
+    <a href="https://wa.me/qr/MJY3EVGYNLNWE1" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-square-whatsapp my-4 hover:text-orange-500"></i>
+    </a>
+  </div>
+</div>
+
+      <img src="./media/Adobe Express - file.png" alt="Profile background"
+        class="absolute inset-0 w-full h-[700px] mt-20 object-cover opacity-20 md:hidden z-0" />
+    </div>
+  </div>
 
 
 
